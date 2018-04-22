@@ -108,10 +108,10 @@ def shortest_string(strings):
     # ------------------------------------------------------------------
     length = 9999999999999
     string = ''
-    for i in range(len(strings)):
-        if len(strings[i]) < length:
-            length = len(strings[i])
-            string = strings[i]
+    for k in range(len(strings)):
+        if len(strings[k]) < length:
+            length = len(strings[k])
+            string = strings[k]
     return string
 
 
@@ -191,9 +191,9 @@ def index_of_largest_number(numbers, n):
     #     The testing code is already written for you (above).
     #
     index = 0
-    for i in range(n):
-        if numbers[i] > numbers[index]:
-            index = i
+    for k in range(n):
+        if numbers[k] > numbers[index]:
+            index = k
     return index
 
 
@@ -251,8 +251,8 @@ def number_of_stutters(s):
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
     count = 0
-    for i in range(len(s) - 1):
-        if s[i] == s[i+1]:
+    for k in range(len(s) - 1):
+        if s[k] == s[k+1]:
             count = count + 1
     return count
 
@@ -334,8 +334,8 @@ def is_palindrome(s):
     #   above are particularly good examples to work by hand.
     ####################################################################
     # ------------------------------------------------------------------
-    for i in range(len(s)):
-        if s[i] == s[len(s) - 1 - i]:
+    for k in range(len(s)):
+        if s[k] == s[len(s) - 1 - k]:
             pass
         else:
             return False
@@ -403,8 +403,8 @@ def count_same(sequence1, sequence2):
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
     count = 0
-    for i in range(len(sequence1)):
-        if sequence1[i] == sequence2[i]:
+    for k in range(len(sequence1)):
+        if sequence1[k] == sequence2[k]:
             count = count + 1
     return count
 
